@@ -1,0 +1,11 @@
+%env.set _NT_SYMBOL_PATH "symsrv*symsrv.dll*c:\symbols*http://msdl.microsoft.com/download/symbols"
+
+@NativeHookCriteria = StringCollection.Create
+StringCollection.Add @NativeHookCriteria "* $(ExeName) * * True False defaultHookSafety"
+
+@ManagedHookCriteria = StringCollection.Create
+StringCollection.Add @ManagedHookCriteria "* * * * True False"
+
+@Native.Track.Function_calls/returns = "True"
+echo 5
+pipe.RecvTimeoutPrompt true

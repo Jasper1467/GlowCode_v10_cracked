@@ -1,0 +1,14 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\dev\gc6\RemoteCOM\bin\Debug\cscript.exe</StartProgram>
+    <StartArguments>test.js</StartArguments>
+    <StartWorkingDirectory>C:\dev\gc6\RemoteCOM\bin\Debug\</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <StartProgram>C:\dev\gc6\RemoteCOM\bin\Debug\cscript.exe</StartProgram>
+    <StartWorkingDirectory>C:\dev\gc6\RemoteCOM\bin\Debug\</StartWorkingDirectory>
+    <StartArguments>test.js</StartArguments>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+</Project>
